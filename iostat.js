@@ -7,7 +7,8 @@ var sys = require('sys'),
     all_disks = {},
     columns = [];
 
-var app = express.createServer();
+  var express = require("express");
+  var app = express();
 app.configure(function () {
   app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
 });
